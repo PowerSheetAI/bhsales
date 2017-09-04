@@ -4,7 +4,7 @@ import { CommonModule }   from '@angular/common';
 import { AdminComponent } from './admin.component';
 import { ManagaCTAComponent } from './manage-cta/manage-cta.component';
 import { ManagaEventsComponent } from './manage-events/manage-events.component';
-import { ManageProductsComponent } from './manage-products/manage-products.component';
+import { ManageProductsNewComponent } from './manage-products/manage-products-new.component';
 import { ManageAnnouncementsComponent } from './manage-announcements/manage-announcement.component';
 import { AdminRoutingModule } from './admin-routing.module';
 
@@ -17,7 +17,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 		AdminComponent,
 		ManagaCTAComponent,
 		ManagaEventsComponent,
-		ManageProductsComponent,
+		ManageProductsNewComponent,
 		ManageAnnouncementsComponent
 	]
 })

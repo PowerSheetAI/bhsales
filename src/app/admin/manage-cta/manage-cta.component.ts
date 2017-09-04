@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
 @Component({
-	template: `<p>Management of CTA Shell</p>`
+	templateUrl: './manage-cta.component.html'
 })
 export class ManagaCTAComponent{}

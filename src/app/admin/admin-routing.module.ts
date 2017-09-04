@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { ManagaCTAComponent } from './manage-cta/manage-cta.component';
 import { ManagaEventsComponent } from './manage-events/manage-events.component';
-import { ManageProductsComponent } from './manage-products/manage-products.component';
+import { ManageProductsNewComponent } from './manage-products/manage-products-new.component';
 import { ManageAnnouncementsComponent } from './manage-announcements/manage-announcement.component';
 
 const adminRoutes: Routes = [
@@ -21,8 +21,8 @@ const adminRoutes: Routes = [
 				component: ManagaEventsComponent
 			},
 			{
-				path: 'products',
-				component: ManageProductsComponent
+				path: 'products-new',
+				component: ManageProductsNewComponent
 			},
 			{
 				path: 'announcements',
