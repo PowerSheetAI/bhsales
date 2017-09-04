@@ -1,0 +1,14 @@
+.nav-container{
+	background-color: #1b1c1d;
+	margin-bottom: 1em;
+}
+.nav-container .branding{
+	width: 10em !important;
+	padding-left: 0 !important;
+}
+.ui.menu .item>img:not(.ui) {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -.3em 0;
+    width: 7.5em !important;
+}
