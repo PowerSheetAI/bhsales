@@ -1,0 +1,6 @@
+<p>{{ (cta | async)?.headerText }}</p>
+<p>{{ (cta | async)?.subHeaderText }}</p>
+
+<input type="text" #newHeaderText value="{{ (cta | async)?.headerText }}" />
+<textarea #newSubHeaderText value="{{ (cta | async)?.subHeaderText }}"></textarea> 
+<button (click)="update(newHeaderText.value, newSubHeaderText.value)">Update</button>
