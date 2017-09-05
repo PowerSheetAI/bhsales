@@ -8,6 +8,8 @@ import { ManageProductsNewComponent } from './manage-products/manage-products-ne
 import { ManageAnnouncementsComponent } from './manage-announcements/manage-announcement.component';
 import { AdminRoutingModule } from './admin-routing.module';
 
+import { CTAService } from '../services/cta.service';
+
 @NgModule({
 	imports: [
 		CommonModule,
@@ -19,6 +21,6 @@ import { AdminRoutingModule } from './admin-routing.module';
 		ManagaEventsComponent,
 		ManageProductsNewComponent,
 		ManageAnnouncementsComponent
-	]
+	],
 })
 export class AdminModule{}

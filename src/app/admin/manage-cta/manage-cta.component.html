@@ -3,34 +3,20 @@
 <div class="ui grid">
 	<div class="eight wide column">
 		<h4 class="cta-preview">CTA Preview</h4>
-		<div class="ui fluid raised card">
-			<div class="content">
-				<div class="header">Cute Dog</div>
-				<div class="meta">
-					<span class="category">Animals</span>
-				</div>
-				<div class="description">
-					<p></p>
-				</div>
-			</div>
-			<div class="extra content">
-				<div class="right floated author">
-					Preview
-				</div>
-			</div>
-		</div>
+		<p>{{ (cta | async )?.headerText }}</p>
+		<p>{{ (cta | async )?.subHeaderText }}</p>
 	</div>
 	<div class="eight wide column">
 		<div class="ui form">
 			<div class="field">
 				<label>Main Header Text</label>
-				<textarea rows="2"></textarea>
+				<textarea #newHeaderText rows="2" value="{{ (cta | async )?.headerText }}"></textarea>
 			</div>
 			<div class="field">
 				<label>Sub Header Text</label>
-				<textarea rows="2"></textarea>
+				<textarea #newSubHeaderText rows="2" value="{{ (cta | async )?.subHeaderText }}"></textarea>
 			</div>
-			<button class="positive ui button" type="submit">Save</button>
+			<button class="positive ui button" (click)="update(newHeaderText.value, newSubHeaderText.value)">Save</button>
 		</div>
 	</div>
 </div>
