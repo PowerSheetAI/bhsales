@@ -2,9 +2,12 @@
 <p class="">Here is where you can edit/update your call to action. This is located on the main page of your website. In other words the very first thing your visitors will read.</p>
 <div class="ui grid">
 	<div class="eight wide column">
-		<h4 class="cta-preview">CTA Preview</h4>
-		<p>{{ (cta | async )?.headerText }}</p>
-		<p>{{ (cta | async )?.subHeaderText }}</p>
+	<h4 class="cta-preview">CTA Preview</h4>		
+		<div class="ui segment" style="text-align: center; background-color: #1b1c1d; color: white; margin-top: 0 !important;">
+			<p style="font-size: 2em;">{{ (cta | async )?.headerText }}</p>
+			<p style="font-size: 1.5em;">{{ (cta | async )?.subHeaderText }}</p>
+			<button class="ui disabled button blue">View More!</button>
+		</div>
 	</div>
 	<div class="eight wide column">
 		<div class="ui form">
